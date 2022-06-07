@@ -8,5 +8,3 @@ CREATE TABLE user
     CONSTRAINT user_email_ukey UNIQUE (email),
     CONSTRAINT user_phone_ukey UNIQUE (phone)
 );
-
---rollback DROP TABLE IF EXISTS user CASCADE
