@@ -1,6 +1,7 @@
 plugins {
 	id 'org.springframework.boot' version '2.7.0'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'org.liquibase.gradle' version '2.0.4'
 	id 'java'
 }
 
@@ -15,6 +16,25 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Liquibase
+	implementation 'org.liquibase:liquibase-core'
+
+    // Mysql
+	implementation 'mysql:mysql-connector-java'
+
+    // RabbitMQ
+	implementation 'org.springframework.boot:spring-boot-starter-amqp'
+
+    // Dotenv
+	implementation 'io.github.cdimascio:java-dotenv:5.2.1'
+    // Slf4j
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.36'
+
+    // Logback-classic
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.11'
+
+    // Tests
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
