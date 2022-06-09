@@ -1,7 +1,9 @@
-package com.example.msmpidove.dto;
+package com.example.msmpidove.dto.user;
 
 import com.example.msmpidove.entities.User;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY, getterVisibility = JsonAutoDetect.Visibility.NONE, setterVisibility = JsonAutoDetect.Visibility.NONE)
 public class UserDto {
 
     private final Long id;
