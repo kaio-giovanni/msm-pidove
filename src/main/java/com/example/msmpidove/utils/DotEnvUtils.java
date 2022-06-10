@@ -23,4 +23,8 @@ public class DotEnvUtils {
         return dotenv.get("DB_PASSWORD");
     }
 
+    public static String getRabbitMQUrl() {
+        return dotenv.get("RABBITMQ_URL");
+    }
+
 }

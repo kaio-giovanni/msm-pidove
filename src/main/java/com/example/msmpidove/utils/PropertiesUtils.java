@@ -15,5 +15,6 @@ public class PropertiesUtils {
         System.setProperty("spring.datasource.url", DotEnvUtils.getDatabaseUrl());
         System.setProperty("spring.datasource.username", DotEnvUtils.getDatabaseUserName());
         System.setProperty("spring.datasource.password", DotEnvUtils.getDatabasePassword());
+        System.setProperty("spring.rabbitmq.addresses", DotEnvUtils.getRabbitMQUrl());
     }
 }

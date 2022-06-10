@@ -13,10 +13,7 @@ cd msm-pidove
 gradle clean build
 ```
 2. Create an `.env` file in the project root based on `.env.example`
-3. Install the RabbitMQ:
-   1. step one
-   2. step two
-   3. step three
+3. Configure the RabbitMQ (install locally or configure a server)
 
 #### Run Project
 
